@@ -1,0 +1,359 @@
+<!-- This is a simple HTML template for a detailed review of a buggy project. It includes sections for the executive summary, introduction, team structure, project progress, and a gallery. The page also features a lightbox for viewing images in the gallery. The video section is designed to play a video in the background with a play button. The page is styled using CSS and includes JavaScript for interactivity. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buggy Project - Detailed Review</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="inverted">
+   
+
+   <!-- Main Content -->
+   <header>
+    <div class="container">
+        <div class="header-content">
+            <div class="photo">
+                <img src="/images/photo.jpg" alt="Your Photo">
+            </div>
+            <div class="header-text">
+                <h1>Pranay K Pradeep</h1>
+                <p>Electrical Engineering Student | Tech Enthusiast</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#achievements">Achievements</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Buggy Detailed Review Section -->
+    <section class="container">
+        <h2>Buggy Project - Detailed Review</h2>
+        <div class="card">
+            <h3>Executive Summary</h3>
+            <p>The Feugo 15 project is an initiative to design and build a buggy powered by a 150cc Hero CBZ petrol engine. This project serves as both a technical challenge and a platform to demonstrate our engineering skills.</p>
+        </div>
+        <!-- Add additional Buggy Detailed Review content here -->
+    
+
+    <!-- Video Section -->
+    <section id="intro-video-container" style="position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 10; background-color: black;">
+        <video id="intro-video" playsinline style="width: 100%; height: 100%; object-fit: cover;">
+            <source src="videos/intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Play Button -->
+        <button id="play-video-btn" style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 20;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        ">Play</button>
+    </section>
+
+            <div class="card">
+                <h3>Introduction</h3>
+                <p>The F15 buggy bridges theoretical learning with hands-on application by combining principles of mechanical design, electronics, and control systems.</p>
+                <p>Key Features Include:</p>
+                <ul>
+                    <li>Engine: 150cc Hero CBZ petrol engine.</li>
+                    <li>Chassis: Open design using rectangular steel pipes with integrated suspension and measurement provisions.</li>
+                    <li>Electronics: Arduino/ESP boards with sensor integration and potential LoRa/GSM communication.</li>
+                    <li>Control: Mobile app management for engine control, key activation, and emergency safety functions.</li>
+                    <li>Events: Hosting workshops, technical talks, webinars, and driving events.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Team Structure</h3>
+                <p>Our team of 15 members contributes equally across every aspect of the project. The team members are:</p>
+                <ul>
+                    <li>Pranay K Pradeep</li>
+                    <li>Renvin C J</li>
+                    <li>Mohammed Shamil S</li>
+                    <li>Nidhin Sudhakaran</li>
+                    <li>Arjun N Binu</li>
+                    <li>Josh Danial S</li>
+                    <li>Asif Ali S</li>
+                    <li>Alan S</li>
+                    <li>Dheeraj A G</li>
+                    <li>Ebin Mathews John</li>
+                    <li>Joel Joseph</li>
+                    <li>Athul Krishnan B</li>
+                    <li>Vinayak Sabu</li>
+                    <li>Sarang V R</li>
+                    <li>Amal Dev T S</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Project Progress</h3>
+                <div class="progress">
+                    <h4>Design Phase</h4>
+                    <p>We have completed the design of the chassis and made the arm for suspension.</p>
+                    <img src="/images/design.jpg" alt="Design Phase Image">
+
+                    <h4>Assembly Phase</h4>
+                    <p>We have done lathe work for the rear axle and made the engine start.</p>
+                    <img src="/images/assembly.jpg" alt="Assembly Phase Image">
+
+                    <h4>Testing Phase</h4>
+                    <p>Initial tests will been conducted soon .</p>
+                    <img src="imagestesting.jpg" alt="Testing Phase Image">
+
+                    <h4>Technical Approach</h4>
+                    <p>The project involves multiple technical aspects:</p>
+                    <ul>
+                        <li>Mechanical Design: Lightweight yet durable chassis using rectangular steel pipes.</li>
+                        <li>Electrical & Electronics: Real-time control using Arduino/ESP boards and sensor integration.</li>
+                        <li>Control Systems: Mobile app for key activation, engine start/stop, and emergency kill switch.</li>
+                    </ul>
+
+                    <h4>Timeline and Milestones</h4>
+                    <p>We have set specific milestones to ensure timely progress:</p>
+                    <ul>
+                        <li>Design Phase: 1 week - Finalize sketches and CAD models.</li>
+                        <li>Component Sourcing: 1 week - Confirm dimensions, secure vendors, select materials.</li>
+                        <li>Fabrication: 1-2 weeks - Chassis construction, suspension installation, engine mounting.</li>
+                        <li>Electronics Integration: 1 week - Develop firmware, integrate sensors, implement controls.</li>
+                        <li>Testing: 1 week - Field testing and adjustments.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card links">
+                <h3>Follow Our Project</h3>
+                <p>Visit our <a href="https://example.com">project website</a> for more details and updates.</p>
+                <p>Follow us on Instagram: <a href="https://instagram.com/your_project_handle">@your_project_handle</a></p>
+            </div>
+
+        </section>
+
+
+
+
+
+        <section class="gallery container">
+            <h2>Project Gallery</h2>
+            <div class="gallery-grid">
+                <img src="/images/1.jpg" alt="Gallery Image 1" class="gallery-item">
+                <img src="/images/2.jpg" alt="Gallery Image 2" class="gallery-item">
+                <img src="/images/3.jpg" alt="Gallery Image 3" class="gallery-item">
+                <img src="/images/4.jpg" alt="Gallery Image 3" class="gallery-item">
+                <img src="/images/6.png" alt="Gallery Image 3" class="gallery-item">
+                <img src="/images/7.png" alt="Gallery Image 3" class="gallery-item">
+                <img src="/images/8.png" alt="Gallery Image 3" class="gallery-item">
+                <img src="/images/9.png" alt="Gallery Image 3" class="gallery-item">
+                <img src="/images/5.jpg" alt="Gallery Image 3" class="gallery-item">
+                <img src="/images/10.webp" alt="Gallery Image 3" class="gallery-item">
+                <!-- Add more images as needed -->
+            </div>
+        
+            <!-- Lightbox -->
+            <div id="lightbox" class="lightbox">
+                <span class="close">&times;</span>
+                <img class="lightbox-content" id="lightbox-image">
+                <a class="prev" id="prev">&#10094;</a>
+                <a class="next" id="next">&#10095;</a>
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pranay K Pradeep. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const close = document.querySelector('.close');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+        let currentImageIndex = 0;
+        let i=0
+    
+        const introVideo = document.getElementById('intro-video');
+        const introContainer = document.getElementById('intro-video-container');
+        const mainContent = document.getElementById('main-content');
+        const playButton = document.getElementById('play-video-btn');
+        // Create Play Button
+    
+        // Variables to track scroll behavior
+        let scrollCount = 0; // Tracks number of scrolls
+        const SCROLL_THRESHOLD = 50; // Number of scrolls needed for full fade-out
+        const FADE_STEP = 1 / SCROLL_THRESHOLD; // Opacity step per scroll
+    
+        // Add Play Button for the video
+        playButton.textContent = 'Play';
+        playButton.style.position = 'absolute';
+        playButton.style.top = '90%';
+        playButton.style.left = '50%';
+        playButton.style.transform = 'translate(-50%, -50%)';
+        playButton.style.zIndex = '20';
+        playButton.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+        playButton.style.color = 'white';
+        playButton.style.padding = '10px 20px';
+        playButton.style.fontSize = '18px';
+        playButton.style.border = 'none';
+        playButton.style.borderRadius = '5px';
+        playButton.style.cursor = 'pointer';
+        introContainer.appendChild(playButton);
+        
+    
+        // Play the video when the play button is clicked
+        playButton.addEventListener('click', () => {
+            if(i==0){
+                introVideo.play();
+                introVideo.muted = false; // Enable sound
+                i++;
+            }
+            else{
+                introVideo.pause();
+                introVideo.muted = true; // Mute the video when paused
+                i=0;
+            }
+
+    
+            
+        });
+
+         /* Scroll event listener for fade-out behavior
+         window.addEventListener('scroll', () => {
+            if (window.scrollY > 0 && scrollCount < SCROLL_THRESHOLD) {
+                scrollCount++;
+                fadeOutVideo();
+              
+            }
+        });*/
+
+        let lastScrollPosition = 0;
+        let pos=0
+
+// Scroll event listener
+window.addEventListener('scroll', () => {
+    const currentScrollPosition = window.scrollY;
+    if (scrollCount > SCROLL_THRESHOLD) {
+              
+              scrollCount=150;
+              introContainer.style.opacity = '1';
+              fadeOutVideo();
+
+            }
+    else if (currentScrollPosition > lastScrollPosition && scrollCount < SCROLL_THRESHOLD ) {
+        // Scrolling Down
+        console.log('Scrolling Down');
+        scrollCount++;
+         fadeOutVideo();
+         lastScrollPosition = currentScrollPosition;
+    } else if(currentScrollPosition < lastScrollPosition && scrollCount < SCROLL_THRESHOLD ) {
+        
+    
+        // Scrolling Up
+        console.log('Scrolling Up');
+        scrollCount=scrollCount-1;
+            fadeOutVideo();
+            lastScrollPosition = currentScrollPosition;
+    }
+
+     // Update the last scroll position
+});
+
+        // Function to fade-out the video (on scroll down)
+        const fadeOutVideo = () => {
+            const newOpacity = 1 - scrollCount * FADE_STEP;
+            introContainer.style.opacity = Math.max(newOpacity, 0); // Gradually decrease opacity
+
+            if (scrollCount >= SCROLL_THRESHOLD) {
+                introContainer.style.opacity = '1'; // Reset opacity to 1
+                introContainer.style.position = 'relative'; // Move video to its section
+                introContainer.style.top = 'auto';
+                introContainer.style.height = 'auto';
+                introContainer.style.zIndex = '1';
+                introVideo.style.height = 'auto';
+                introVideo.muted = true; // Mute the video when it transitions to its section
+                mainContent.style.display = 'block';// Show main content
+                
+                 // Gradually decrease opacity
+
+            }
+        };
+        
+
+       
+
+        // Replay functionality: Reset video when scrolled back to its section
+        introVideo.addEventListener('ended', () => {
+            introVideo.currentTime = 0; // Reset the video to the beginning
+        });
+    
+        // Add error handling for video playback issues
+        introVideo.addEventListener('error', () => {
+            introContainer.style.opacity = 1; // Hide video on error
+            introContainer.style.pointerEvents = 'none';
+            mainContent.style.display = 'block'; // Show main content
+        });
+    
+        // Lightbox functionality
+        const showLightbox = (index) => {
+            lightbox.style.display = 'block';
+            lightboxImage.src = galleryItems[index].src;
+            currentImageIndex = index;
+        };
+    
+        const hideLightbox = () => {
+            lightbox.style.display = 'none';
+        };
+    
+        const showNextImage = () => {
+            currentImageIndex = (currentImageIndex + 1) % galleryItems.length;
+            lightboxImage.src = galleryItems[currentImageIndex].src;
+        };
+    
+        const showPrevImage = () => {
+            currentImageIndex = (currentImageIndex - 1 + galleryItems.length) % galleryItems.length;
+            lightboxImage.src = galleryItems[currentImageIndex].src;
+        };
+    
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => showLightbox(index));
+        });
+    
+        close.addEventListener('click', hideLightbox);
+        next.addEventListener('click', showNextImage);
+        prev.addEventListener('click', showPrevImage);
+    
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) hideLightbox();
+        });
+    </script>
+</body>
+
+</html>
